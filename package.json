@@ -1,0 +1,23 @@
+{
+  "name": "Random-Quote-Machine",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A Beautifull Random Quote Machine",
+  "repository": "https://github.com/parloti/Random-Quote-Machine.git",
+  "license": "MIT",
+  "scripts": {
+    "update": "npm update",
+    "start": "http-server -a localhost -p 8000 -c-1 . -o",
+    "src2cdn": "src2cdn.js"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "ftp": "^0.3.10",
+    "http-server": "^0.9.0"
+  }
+}

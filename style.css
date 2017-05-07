@@ -1,0 +1,10 @@
+.jumbotron {
+    height: 100vh;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    max-width: 40rem;
+}
