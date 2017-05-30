@@ -8,3 +8,20 @@
 .card {
     max-width: 40rem;
 }
+
+.btn-secondary {
+    border: none;
+    -webkit-appearance: unset;
+}
+
+.share .btn-secondary {
+    padding: 0;
+    margin-right: 10px;
+    border: none;
+    -webkit-appearance: unset;
+}
+
+.btn-secondary .fa {
+    font-size: 300%;
+    border: none;
+}

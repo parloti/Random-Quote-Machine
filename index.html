@@ -7,14 +7,38 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="randomQuoteMachine" ng-controller="dynamicColors" ng-style="backgroundColor">
 <div class="jumbotron jumbotron-fluid text-center">
     <div class="container-fluid">
         <div class="card">
-            <div class="card-block">
-                <h3 class="card-title"><span class="fa fa-quote-left" aria-hidden="true"></span>Card title</h3>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Button</a>
+            <div class="card-block" ng-controller="dynamicQuote">
+                <div class="card-text dynamic-color" ng-style="color">
+                    <div>
+                        <span class="fa fa-quote-left" aria-hidden="true"></span>
+                        <span ng-bind="quote.message"></span>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <div class="p-2" ng-bind="quote.author"></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between">
+                        <div class="btn-group share" role="group" ng-style="color">
+                            <a type="button" class="btn btn-secondary" ng-href="share.twitter">
+                                <span class="fa fa-twitter-square" aria-hidden="true"></span>
+                            </a>
+                            <a type="button" class="btn btn-secondary" ng-href="share.tumblr">
+                                <span class="fa fa-tumblr-square" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" onclick="newQuote()"
+                                    ng-style="backgroundColor">
+                                New quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
