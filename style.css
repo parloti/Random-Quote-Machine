@@ -1,5 +1,5 @@
 .jumbotron {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 !important;
     display: flex;
     align-items: center;
@@ -9,28 +9,37 @@
     max-width: 30rem;
 }
 
-.btn-secondary {
+.share .btn-secondary,
+.share .btn-secondary:hover,
+.btn-secondary .fa,
+.btn-secondary.new-quote,
+.btn-secondary.new-quote:hover {
     border: none;
-    -webkit-appearance: unset;
 }
 
-.btn-secondary span:hover {
-    opacity: .7;
+*:focus,
+.btn-secondary:focus {
+    outline: none;
+    webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-.share .btn-secondary {
+.share .btn-secondary, .share .btn-secondary:hover {
     padding: 0;
     margin-right: 10px;
-    border: none;
     -webkit-appearance: unset;
     color: inherit;
+    background: none;
 }
 
 .btn-secondary .fa {
     font-size: 300%;
-    border: none;
 }
 
-.new-quote {
+.btn-secondary span:hover, .btn-secondary.new-quote:hover {
+    opacity: .6;
+}
+
+.btn-secondary.new-quote, .btn-secondary.new-quote:hover {
     color: white;
 }

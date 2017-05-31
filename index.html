@@ -19,16 +19,16 @@
                         <span ng-bind="quote.message"></span>
                     </div>
                     <div class="d-flex flex-row-reverse">
-                        <div class="p-2" ng-bind="quote.author"></div>
+                        <div class="p-2">- <span ng-bind="quote.author"></span></div>
                     </div>
                 </div>
                 <div class="container-fluid">
                     <div class="d-flex justify-content-between">
                         <div class="btn-group share" role="group" ng-style="{'color':quote.color}">
-                            <a type="button" class="btn btn-secondary" ng-href="share.twitter">
+                            <a type="button" class="btn btn-secondary" target="_blank" ng-href="{{share.twitter}}">
                                 <span class="fa fa-twitter-square" aria-hidden="true"></span>
                             </a>
-                            <a type="button" class="btn btn-secondary" ng-href="share.tumblr">
+                            <a type="button" class="btn btn-secondary" target="_blank" ng-href="{{share.tumblr}}">
                                 <span class="fa fa-tumblr-square" aria-hidden="true"></span>
                             </a>
                         </div>
