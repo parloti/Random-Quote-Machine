@@ -6,7 +6,7 @@
 }
 
 .card {
-    max-width: 40rem;
+    max-width: 30rem;
 }
 
 .btn-secondary {
@@ -14,14 +14,23 @@
     -webkit-appearance: unset;
 }
 
+.btn-secondary span:hover {
+    opacity: .7;
+}
+
 .share .btn-secondary {
     padding: 0;
     margin-right: 10px;
     border: none;
     -webkit-appearance: unset;
+    color: inherit;
 }
 
 .btn-secondary .fa {
     font-size: 300%;
     border: none;
+}
+
+.new-quote {
+    color: white;
 }
